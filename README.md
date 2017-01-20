@@ -38,4 +38,5 @@ For example:
    }
 ```
 
-A functional example may be found in the [test directory](/test).
+A functional example may be found in the [example
+directory](/example).
