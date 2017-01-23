@@ -1,7 +1,7 @@
-# errchan
+# errchan [![](https://godoc.org/github.com/CyCoreSystems/errchan?status.svg)](http://godoc.org/github.com/CyCoreSystems/errchan)
 
 A simple wrapper for safely handling errors asynchronously from a function's
-execution.  [![](https://godoc.org/github.com/CyCoreSystems/errchan?status.svg)](http://godoc.org/github.com/CyCoreSystems/errchan)
+execution. 
 
 Package `errchan` provides a simple wrapper for safely handling errors
 asynchronously from a function's execution.
