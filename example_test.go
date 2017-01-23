@@ -5,8 +5,8 @@ import (
 	"os"
 )
 
-func ExampleNewErrChan() {
-	ec := NewErrChan()
+func ExampleNew() {
+	ec := New()
 
 	ec.Wrap(func() error {
 		return os.Remove("/tmp/testmenow")
@@ -20,4 +20,10 @@ func ExampleNewErrChan() {
 	if err != nil {
 		fmt.Println("Got an error", err)
 	}
+}
+
+func ExampleGo() {
+	err := <-Wrap(func() error {
+		return os.Remove("/tmp/testmenow")
+	})
 }

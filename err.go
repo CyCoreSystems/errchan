@@ -80,3 +80,18 @@ func (e *ErrChan) Wrap(f func() error) {
 		}
 	}()
 }
+
+// Go provides a single function for when the caller is only interested in
+// wrapping a single function.
+//
+// Typically this is used for executing a conditional goroutine, wherein a
+// function performs a number of prechecks or order-sensitive operations before
+// running its remainder in the background.
+func Go(f func() error) error {
+	ec := New()
+	defer ec.Close()
+
+	ec.Wrap(f)
+
+	return <-ec.Next()
+}
