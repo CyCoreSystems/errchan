@@ -23,7 +23,7 @@ func ExampleNew() {
 }
 
 func ExampleGo() {
-	err := <-Wrap(func() error {
+	err := <-Go(func() error {
 		return os.Remove("/tmp/testmenow")
 	})
 }
