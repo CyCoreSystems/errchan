@@ -1,5 +1,7 @@
 # errchan [![](https://godoc.org/github.com/CyCoreSystems/errchan?status.svg)](http://godoc.org/github.com/CyCoreSystems/errchan)
 
+## ARCHIVED:  please use the official [errgroup](https://pkg.go.dev/golang.org/x/sync/errgroup?tab=doc) package instead.
+
 A simple wrapper for safely handling errors asynchronously from a function's
 execution. 
 
